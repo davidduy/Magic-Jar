@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes, BrowserRouter} from "react-router-dom";
+import "./App.css";
+import MainPage from "./layout/MainPage"
+import Welcome from "./layout/Welcome"
+import HowToCook from "./layout/HowToCook"
+import Navbar from "./component/navbar/navbar"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App" id="page-top">
+        <header>
+          <Navbar />
+        </header>
+        <div>
+          <Routes>
+            {/* Khi khop path thi render element mong muon */}
+            <Route path="/" element={<Welcome />} />
+            <Route path="/CookingJar" element={<MainPage />} />
+            <Route path="/Guide" element={<HowToCook />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

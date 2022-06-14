@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+
+.masonJar {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #000;
+    background: #C2E0FF;
+    border-radius: 25px;
+    opacity: .8;
+    position: absolute;
+}
+
+.neckBottom {
+    height: 15px;
+    width: 75px;
+    border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 90px 90px;
+    -webkit-border-radius: 0 0 30px 30px;
+    background: #C2E0FF;
+    position: relative;
+    left: 13px;
+    top: -48px;
+}
+
+.shine {
+    height: 57px;
+    width: 50px;
+    border-radius: 0 0 30px 30px;
+    -moz-border-radius: 0 0 30px 30px;
+    -webkit-border-radius: 0 0 30px 30px;
+    position: relative;
+    left: 35px;
+    top: 29px;
+    border-right: 7px solid #FFFCF9;
+}
+
+.shine2 {
+    height: 25px;
+    width: 50px;
+    border-radius: 30px 30px 0 0;
+    -moz-border-radius: 30px 30px 0 0;
+    -webkit-border-radius: 30px 30px 0 0;
+    background: #C2E0FF;
+    position: relative;
+    left: 35px;
+    top: -51px;
+    border-right: 7px solid #FFFCF9;
+}
+
+.lid{
+    height:40px;
+    width:80px;
+    border-radius: 90px / 33px;
+    -moz-border-radius:90px / 33px;
+    -webkit-border-radius: 90px / 33px;
+    background:#617080;
+    position: absolute;
+    border-right:5px solid #222; 
+    border-left:5px solid #222; 
+    right: 5px;
+}
+
+.lid.top{
+    top: -45px;
+    z-index: 2;
+}
+
+.lid.mid{
+    top: -38px;
+    z-index:1;
+}
+
+.lid.bot{
+    top: -35px;
+}
+
+.lid.back{
+    top: -47px;
+    background:#222;
+}
+
+.lid.back2{
+    top: -36px;
+    background:#222;
+}
